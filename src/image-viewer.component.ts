@@ -33,8 +33,14 @@ import { ImageViewerEnter, ImageViewerLeave } from './image-viewer-transitions';
 @Component({
 	selector: 'image-viewer',
 	template: `
-		<ion-header no-border>
+		<ion-header no-shadow no-border>
 			<ion-navbar>
+			<ion-buttons left>
+			<button ion-button navPop>
+			  <i class="zwicon-arrow-left btn-back-zwicons"></i>
+			</button>
+		  </ion-buttons>
+	  
 			</ion-navbar>
 		</ion-header>
 
